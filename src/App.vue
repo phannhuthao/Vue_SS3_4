@@ -1,10 +1,8 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
-import Exercice04 from './Session3/Exercise04.vue';
-import Exercice05 from './Session3/Exercise05.vue';
-import Exercise06 from './Session3/Exercise06.vue';
-import Exercise07 from './Session3/Exercise07.vue';
-import Exercise08 from './Session3/Exercise08.vue';
+import Exercise04 from './Session4/Exercise04.vue';
+import Exercise05 from './Session4/Exercise05.vue';
+import Exercise06 from './Session4/Exercise06.vue';
 
 // let urlImg = "https://huanluyencho119.vn/storage/9c/b8/9cb8sza53kwquhgx4wmgnll6g3wu_cach-huan-luyen-cho-phat-mot-chu-cho-khi-lam-sai-lieu-co-hieu-qua-nhu-mong-doi.jpg"
 // // let test:boolean = true;
@@ -45,11 +43,11 @@ import Exercise08 from './Session3/Exercise08.vue';
 
 
 <template>
-<!-- <Exercice04/>
-<Exercice05/>
-<Exercise06/>
-<Exercise07/> -->
-<Exercise08/>
+<!-- <Exercise02/> -->
+ <!-- <Exercise03/> -->
+  <!-- <Exercise04></Exercise04> -->
+   <!-- <Exercise05></Exercise05> -->
+    <Exercise06></Exercise06>
   
   <!-- <img :src="urlImg" alt="" width="400px" height="200px">
   <br>
