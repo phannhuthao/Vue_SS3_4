@@ -1,77 +1,83 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
-import Exercise04 from './Session4/Exercise04.vue';
-import Exercise05 from './Session4/Exercise05.vue';
-import Exercise06 from './Session4/Exercise06.vue';
+import Exercise1 from './Session5/Exercise1.vue';
+import Exercise2 from './Session5/Exercise2.vue';
+import Exercise3 from './Session5/Exercise3.vue';
+import Exercise4 from './Session5/Exercise4.vue';
+import Exercise5 from './Session5/Exercise5.vue';
+import Exercise6 from './Session5/Exercise6.vue';
+import Exercise7 from './Session5/Exercise7.vue';
 
-// let urlImg = "https://huanluyencho119.vn/storage/9c/b8/9cb8sza53kwquhgx4wmgnll6g3wu_cach-huan-luyen-cho-phat-mot-chu-cho-khi-lam-sai-lieu-co-hieu-qua-nhu-mong-doi.jpg"
-// // let test:boolean = true;
-// let test = ref(false);
+// let isShow = ref(0);
+// let userList = [
+//   {
+//     id:1,
+//     userName:"admin",
+//     password: "123",
+//     gender: false
+//   },
 
-// let user = {
-//   id: 1,
-//   name: "Hào",
-//  }
-
- 
-// let count = ref(0);
-
-//  watch(count, (giaTriCountMoi, giaTriCountTruocDo, ) => {
-//   console.log("Giá trị count trước đó là: ", giaTriCountTruocDo);
-//   console.log("Giá trị count mới", giaTriCountMoi)
-//  })
-
-// function testColor(a: number) {
-//   console.log("Đã vào",a)
-//   test.value = !test.value
-
-//   console.log("Giá trị Test", test)
-// }
-
-// function EnterKey() {
-//   console.log("Enter key");
-// }
-
-// let number = ref(1);
-
-// let numberTinhTong = computed(() => {
-//   return number.value + 100;
-// })
-
-
+//   {
+//     id: 2,
+//     userName: "user",
+//     password: "456",
+//     gender: true
+//   }
+// ]
 </script>
 
 
 <template>
-<!-- <Exercise02/> -->
- <!-- <Exercise03/> -->
-  <!-- <Exercise04></Exercise04> -->
-   <!-- <Exercise05></Exercise05> -->
-    <Exercise06></Exercise06>
+
+  <!-- <Exercise1/> -->
+   <!-- <Exercise2/> -->
+    <!-- <Exercise3/> -->
+     <!-- <Exercise4/> -->
+      <!-- <Exercise5/> -->
+       <!-- <Exercise6/> -->
+        <Exercise7/>
+
+  <!-- <div v-if="isShow == 0">Xin chào</div>
+  <div v-else-if="isShow == 1">Nhìn cc</div>
+  <div v-else>Tạm biệt</div>
+  <br>
+  <button @click="() => {
+    isShow = isShow == 0 ? 1 : 0;
+  }" >Show</button>
+
+  <button @click="() => {
+    isShow = 2;
+  }">Show Other</button>
+
+
+  <div v-show="false">Nakano Nino</div> -->
+
+  <!-- <table class="bang">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(user, index) in userList" :key ="user.id">
+        <th>{{ index + 1 }}</th>
+        <th>{{ user.userName }}</th>
+        <th>{{ user.password }}</th>
+        <th>{{ user.gender  }}</th>
+      </tr>
+    </tbody>
+  </table> -->
   
-  <!-- <img :src="urlImg" alt="" width="400px" height="200px">
-  <br>
-  <h1 :class="test ? 'test': ''">Nhìn cái gì</h1>
-
-  <button v-on:click="testColor(5)">Change Color</button>
-  <br>
-  <input @keydown.enter="EnterKey" type="text"><br>
-
-  <span>Tên của user {{ user.name }}</span><br>
-
-  <span>Gia trị là: {{ numberTinhTong }}</span>
-  <button @click="()=> {
-    number = number + 1
-  }" >Tăng giá trị</button>
-
-  <h1 v-on:click="() => {
-    count++
-  }" >Giá của count là: {{ count }}</h1> -->
   </template>
 
 <style scoped>
-/* .test {
-  color: red
-} */
+ /* table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  } */
 
 </style>
