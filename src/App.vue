@@ -1,83 +1,52 @@
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue';
-import Exercise1 from './Session5/Exercise1.vue';
-import Exercise2 from './Session5/Exercise2.vue';
-import Exercise3 from './Session5/Exercise3.vue';
-import Exercise4 from './Session5/Exercise4.vue';
-import Exercise5 from './Session5/Exercise5.vue';
-import Exercise6 from './Session5/Exercise6.vue';
-import Exercise7 from './Session5/Exercise7.vue';
+import { ref } from 'vue';
+import Bt2 from './Session7/bt2.vue';
+import Bt3 from './Session7/bt3.vue';
+import Bt5 from './Session7/bt5.vue';
+import Bt6 from './Session7/bt6.vue';
 
-// let isShow = ref(0);
-// let userList = [
-//   {
-//     id:1,
-//     userName:"admin",
-//     password: "123",
-//     gender: false
-//   },
 
-//   {
-//     id: 2,
-//     userName: "user",
-//     password: "456",
-//     gender: true
-//   }
-// ]
+// let userlist = [{id: 1, name: "Nguyễn Thanh Hạ", price: 0, quantity: 0 }]
+
+function handleClick() {
+  alert('Bạn đã nhấn vào nút Xem chi tiết');
+}
 </script>
-
-
 <template>
+  <div>
+    <!-- <Bt2 :userList="userlist">
 
-  <!-- <Exercise1/> -->
-   <!-- <Exercise2/> -->
-    <!-- <Exercise3/> -->
-     <!-- <Exercise4/> -->
-      <!-- <Exercise5/> -->
-       <!-- <Exercise6/> -->
-        <Exercise7/>
+    </Bt2> -->
 
-  <!-- <div v-if="isShow == 0">Xin chào</div>
-  <div v-else-if="isShow == 1">Nhìn cc</div>
-  <div v-else>Tạm biệt</div>
-  <br>
-  <button @click="() => {
-    isShow = isShow == 0 ? 1 : 0;
-  }" >Show</button>
+    <!-- <Bt3>
+      <p>Count: {{ count }}</p>
+    <CountChildren @increment="incrementCount" />
+    </Bt3> -->
 
-  <button @click="() => {
-    isShow = 2;
-  }">Show Other</button>
+    <!-- <Bt5>
+      <h3>Thông báo từ hệ thống</h3>
+      <p>Đây là nội dung của modal. Bạn có thể đóng modal bằng cách nhấn vào nút 'Close'.</p>
+    </Bt5> -->
 
+    <Bt6>
+      <Card>
+    <template #header>
+      <h3>Thông tin sản phẩm</h3>
+    </template>
 
-  <div v-show="false">Nakano Nino</div> -->
+    <template #body>
+      <p>Đây là mô tả ngắn gọn về sản phẩm này. Sản phẩm có các tính năng nổi bật và giá cả hợp lý.</p>
+    </template>
 
-  <!-- <table class="bang">
-    <thead>
-      <tr>
-        <th>STT</th>
-        <th>Name</th>
-        <th>Password</th>
-        <th>Gender</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="(user, index) in userList" :key ="user.id">
-        <th>{{ index + 1 }}</th>
-        <th>{{ user.userName }}</th>
-        <th>{{ user.password }}</th>
-        <th>{{ user.gender  }}</th>
-      </tr>
-    </tbody>
-  </table> -->
-  
-  </template>
+    <template #footer>
+      <button @click="handleClick">Xem chi tiết</button>
+    </template>
+  </Card>
+    </Bt6>
+  </div>
+</template>
+
 
 <style scoped>
- /* table, th, td, tr {
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-  } */
 
 </style>
