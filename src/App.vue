@@ -1,50 +1,39 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import Bt2 from './Session7/bt2.vue';
-import Bt3 from './Session7/bt3.vue';
-import Bt5 from './Session7/bt5.vue';
-import Bt6 from './Session7/bt6.vue';
+import { ref, watch } from 'vue';
+import Exercise01 from './Session9/Exercise01.vue';
+import Exercise02 from './Session9/Exercise02.vue';
+import Exercise03 from './Session9/Exercise03.vue';
+import Exercise04 from './Session9/Exercise04.vue';
+import Exercise05 from './Session9/Exercise05.vue';
+import Exercise06 from './Session9/Exercise06.vue';
+import Exercise07 from './Session9/Exercise07.vue';
 
+// let count = ref(0);
+// let message = ref('gia tri message');
 
-// let userlist = [{id: 1, name: "Nguyễn Thanh Hạ", price: 0, quantity: 0 }]
-
-function handleClick() {
-  alert('Bạn đã nhấn vào nút Xem chi tiết');
-}
+// watch(message, (newVal, olVal) => {
+//   console.log("message change", newVal, olVal)
+// })
 </script>
+
 <template>
-  <div>
-    <!-- <Bt2 :userList="userlist">
+<!-- <p>Count: {{ count }}</p>
+<input type="text" :value="message" @change="(e) => {
+  console.log('Giá trị:', e.target.value)
+}"></input> -->
 
-    </Bt2> -->
+<!-- <form action="">
+  <p>User Name:</p>
+  <input type="text" placeholder="user name"></input>
+  <br>
 
-    <!-- <Bt3>
-      <p>Count: {{ count }}</p>
-    <CountChildren @increment="incrementCount" />
-    </Bt3> -->
+  <p>Password</p>
+</form> -->
+<Exercise07/>
 
-    <!-- <Bt5>
-      <h3>Thông báo từ hệ thống</h3>
-      <p>Đây là nội dung của modal. Bạn có thể đóng modal bằng cách nhấn vào nút 'Close'.</p>
-    </Bt5> -->
-
-    <Bt6>
-      <Card>
-    <template #header>
-      <h3>Thông tin sản phẩm</h3>
-    </template>
-
-    <template #body>
-      <p>Đây là mô tả ngắn gọn về sản phẩm này. Sản phẩm có các tính năng nổi bật và giá cả hợp lý.</p>
-    </template>
-
-    <template #footer>
-      <button @click="handleClick">Xem chi tiết</button>
-    </template>
-  </Card>
-    </Bt6>
-  </div>
 </template>
+
+
 
 
 <style scoped>
